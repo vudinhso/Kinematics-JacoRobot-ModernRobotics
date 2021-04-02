@@ -29,4 +29,11 @@ for i=1:length(th)
     T = T*MatrixExp6(VecTose3(screw(:,i)*th(i)));
 end
 T = T*M
+
+test1 = M;
+for i=length(th):-1:1
+    test1=fcn_MatrixExp6(screw(:,i), th(i) )*test1;
+end
+test1
+
 delta_time = toc()
