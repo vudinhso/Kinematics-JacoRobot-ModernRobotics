@@ -17,5 +17,7 @@ For forward kinematics with screw theory:
 - FK_4DOF_screw.m
 - FK_6DOF_curv_screw.m
 - FK_6DOF_sphr_screw.m
-Screw theory uses the following functions:
-- 
+Screw theory tends to use a lot of functions, which are the following:
+- VecTose3.m: Convert a 6d twist vector to a skew-symmetric matrix in se(3)
+    - VecToso3.m: Convert a 3d vector to a skew-symmetric matrix in so(3)
+- MatrixExp6.m: Calculate the configuration T from a matrix se(3), which is calculate from a 6D twist. 
