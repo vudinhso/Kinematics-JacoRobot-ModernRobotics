@@ -35,3 +35,18 @@ For inverse kinematics with screw theory:
 - IK_4DOF_screw.m
 - IK_6DOF_curv_screw.m
 - IK_6DOF_sphr_screw.m
+
+It uses the following function:
+- FKinSpace: calculate the forward kinematics
+  - MatrixExp6.m
+  - VecTose3.m
+- MatrixLog6.m: from a transformation matrix, return a skew-symmetric matrix se3
+  - TransInv.m: calculate the inverse of a transformation matrix
+- se3ToVec.m: convert a skew-symmetric matrix se3 to a twist
+- Adjoint.m: Calculate the adjoint matrix from a transformation matrix, to convert twist from space to space. 
+  - TransToRp.m
+  - VecToso3.m
+- JacobianSpace.m: Calculate the space Jacobian from a matrix containing the screw and a vector containing the angle. 
+  - MatrixExp6.m
+  - VecTose3.m
+  - Adjoint.m
