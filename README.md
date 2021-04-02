@@ -29,4 +29,9 @@ Screw theory tends to use a lot of functions, which are the following:
 
 A more compact library is as follows: 
 - fcn_MatrixExp6.m: takes as argument the screw axis S and the angle theta
-  - VecToso3.m: takes a 3d vector as argument, return the so(3) skew-symmetric matrix. 
+  - VecToso3.m: takes a 3d vector as argument, return the so(3) skew-symmetric matrix.
+
+For inverse kinematics with screw theory: 
+- IK_4DOF_screw.m
+- IK_6DOF_curv_screw.m
+- IK_6DOF_sphr_screw.m
