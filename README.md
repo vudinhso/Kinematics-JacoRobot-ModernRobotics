@@ -26,3 +26,7 @@ Screw theory tends to use a lot of functions, which are the following:
   - NearZero.m: Check if the norm of a vector is close to zero
   - AxisAng3.m: Calculate. the normalized vector and the norm of the vector
   - MatrixExp3.m: Calculate the rotation matrix from a skew-symmetric matrix
+
+A more compact library is as follows: 
+- fcn_MatrixExp6.m: takes as argument the screw axis S and the angle theta
+  - VecToso3.m: takes a 3d vector as argument, return the so(3) skew-symmetric matrix. 
